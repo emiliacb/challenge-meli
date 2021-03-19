@@ -61,7 +61,7 @@ Estas carácterísticas no las pude agregar por falta de tiempo, me mudé sola e
 
 - [ ] Añadir unit testing tanto en front como en back.
 - [ ] Añadir la posibiliad de pasarle un imageClass al componente image.
-- [ ] Mejorar el SEO y transformar la app en PWA.
+- [ ] Mejorar el SEO, los OG tags y transformar la app en PWA.
 - [ ] Añadir login con Auth0 o integración con MercadoLibre.
 - [ ] Utilizar <picture> y <source> para seleccionar el icono mas pequeño en mobile y el más grande en tablet/desktop.
 
