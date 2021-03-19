@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import * as help from "utils/helpers";
 
@@ -12,7 +13,6 @@ const cx = help.cxBind(styles);
  */
 const Image = ({
   lazy: { picture, thumbnail, alt = ""},
-  imageClass,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const handleLoad = () => {
@@ -42,3 +42,7 @@ const Image = ({
 };
 
 export default Image;
+
+Image.propTypes = {
+  lazy : PropTypes.object.isRequired,
+};

@@ -41,7 +41,7 @@ const Product = ({ id }) => {
   }, [item]);
 
   return (
-    <Layout>
+    <Layout seo={seo}>
       {loading && <h1>Loading...</h1>}
       {item.categories && (
         <Breadcrumb categories={item.categories} title={item.title} />

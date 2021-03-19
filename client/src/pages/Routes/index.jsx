@@ -1,5 +1,4 @@
 import React, { lazy, Suspense } from "react";
-import PropTypes from "prop-types";
 import { useRoutes } from "hookrouter";
 
 import Homepage from "../Homepage";
@@ -24,7 +23,3 @@ const Routes = () => {
 };
 
 export default Routes;
-
-Routes.propTypes = {
-  id: PropTypes.string,
-};

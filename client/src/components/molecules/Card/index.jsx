@@ -26,7 +26,8 @@ const Card = ({
             <h2>
               <span>{help.currencySymbol(price.currency)}</span>
               {
-                //No uso Intl.NumberFormat porque quiero darle diferente estilo a cada parte.
+                //Sin el Intl.NumberFormat porque la intención era darle diferente estilo a cada parte,
+                //si la pagina fuera internacional, guardaria el resultado del Intl.NumberFormat y lo recorrería.
                 parseInt(price.amount).toLocaleString("de-DE")
               }
               {price.decimals > 0 && <sup>{price.decimals}</sup>}
