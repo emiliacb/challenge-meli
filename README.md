@@ -32,12 +32,14 @@ API_URL=http://localhost:3000
 En api/ :
 
 ``
+npm install
 npm start
 ``
 
 En client/ :
 
 ``
+npm install
 npm run build && npm run serve
 ``
 
