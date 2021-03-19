@@ -1,0 +1,74 @@
+@use "sass:map";
+
+$colors: (
+  "yellow": #ffe600,
+  "gray-1": #333333,
+  "gray-2": #999999,
+  "gray-3": #eeeeee,
+  "blue": #3483fa,
+  "dark-blue": #2968c8,
+  "white": #fefefe,
+);
+
+@mixin col($color) {
+  color: map.get($colors, $color);
+}
+
+@mixin bg($color) {
+  background-color: map.get($colors, $color);
+}
+
+@mixin brdCol($color) {
+  border-color: map.get($colors, $color);
+}
+
+@mixin breadcrumbArrow($color) {
+  &::after {
+    @include brdCol($color);
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    transform: translate(50%, 60%) rotate(-45deg);
+  }
+}
+
+@mixin container() {
+  display: grid;
+  grid-template-columns: 0.2rem repeat(10, 1fr) 0.2rem;
+  gap: 0.5rem;
+  place-items: center;
+  margin: auto;
+
+  @media (min-width: 400px) {
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+@mixin btn($color, $textColor) {
+  @include bg($color);
+  @include col($textColor);
+  padding: 0.6rem 0;
+  border-radius: 5px;
+  border: none;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+
+//Este mixin me permite solo crear hovers en dispositivos que lo soportan.
+@mixin hover() {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

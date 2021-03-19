@@ -1,0 +1,93 @@
+.wrapper {
+  position: relative;
+}
+
+.dropdown {
+  border: none;
+  user-select: none;
+  padding: 1rem 0;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+  border-radius: 1rem;
+
+  &.active {
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (hover: hover) {
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+  }
+}
+
+.dropDownMenu {
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+
+  @media (min-width: 700px) {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%);
+  }
+}
+
+.hamburger {
+  .topBread {
+    position: relative;
+    height: 1px;
+    width: 22px;
+    margin-bottom: 6px;
+    background-color: black;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform-origin: left;
+
+    &.open {
+      transform: rotate(40deg);
+      transition: 0.1s;
+    }
+  }
+  .patty {
+    height: 1px;
+    width: 22px;
+    background-color: black;
+    box-sizing: border-box;
+
+    &.open {
+      background-color: transparent;
+    }
+  }
+  .bottomBread {
+    position: relative;
+    height: 1px;
+    width: 22px;
+    margin-top: 6px;
+    background-color: black;
+    transition: 0.1s;
+    box-sizing: border-box;
+    transform-origin: left;
+
+    &.open {
+      transform: rotate(-40deg);
+      transition: 0.1s;
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    .topBread,
+    .patty,
+    .bottomBread {
+      transform: none;
+      background-color: black;
+    }
+  }
+}

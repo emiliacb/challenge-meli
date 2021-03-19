@@ -1,0 +1,12 @@
+@use "styles/mixins";
+
+.footer {
+  @include mixins.bg("yellow");
+  min-height: 3rem;
+  display: grid;
+  place-items: center;
+
+  small {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,48 @@
+@use "styles/mixins";
+
+.nav {
+  @include mixins.container();
+  @include mixins.bg("yellow");
+  color: #191c44;
+  min-height: 3.5rem;
+  line-height: 1.3rem;
+  font-size: 0.75rem;
+
+  .wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    gap: 1.6rem;
+    place-items: center;
+    margin: 0 2rem;
+
+    & > a,
+    & > form,
+    & > div {
+      grid-row-start: 1;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+
+      &:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      & > img {
+        object-fit: cover;
+        max-width: 3rem;
+  
+        @media (min-width: 400px) {
+          max-width: 3.4rem;
+        }
+      }
+    }
+
+  }
+}

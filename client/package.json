@@ -1,0 +1,56 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "description": "Meli frontent challenge",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -r dist",
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --mode=development --open --hot",
+    "serve": "serve -s dist",
+    "lint": "eslint --ext .jsx,.js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Em3c2/challenge_meli_frontend.git"
+  },
+  "keywords": [
+    "challenge",
+    "react",
+    "mercadolibre"
+  ],
+  "author": "Emilia Cabral <emiliacabralb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^6.2.0",
+    "hookrouter": "^1.2.5",
+    "nanoid": "^3.1.22",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^7.21.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.22.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^5.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

@@ -1,0 +1,82 @@
+@use "styles/mixins";
+
+.card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-width: 0 0 1px 0;
+  place-items: center;
+
+  @media (min-width: 600px) {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  & > figure {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+  }
+
+  & > div {
+    display: grid;
+    width: 100%;
+    padding: 1rem;
+    grid-row-start: 2;
+    place-items: center;
+
+    @media (min-width: 600px) {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: 8;
+      place-items: initial;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.7rem;
+
+        //Currency symbol.
+        span {
+          margin-right: 0.5rem;
+          font-size: 1.6rem;
+          font-family: sans-serif;
+        }
+
+        //Decimal
+        sup {
+          font-size: 1rem;
+        }
+      }
+
+      figure {
+        width: 1.3rem;
+        margin-left: 0.5rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  & > small {
+    @include mixins.col("gray-1");
+    margin: 2rem 0;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    @media (min-width: 600px) {
+      grid-row-start: 1;
+      grid-column-start: 9;
+    }
+  }
+}

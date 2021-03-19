@@ -1,0 +1,26 @@
+.figure {
+  object-fit: cover;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.picture,
+.thumbnail {
+  position: static;
+  width: 100%;
+  opacity: 1;
+}
+
+.thumbnail {
+  filter: blur(3px);
+}
+
+.hide {
+  position: absolute;
+  opacity: 0;
+
+  &.thumbnail {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+@use "styles/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap");
+
+body {
+  @include mixins.bg("gray-3");
+  font-display: optional;
+  font-family: "Nunito", apple-system, Helvetica, Roboto, Arial, sans-serif,
+    sans-serif;
+}

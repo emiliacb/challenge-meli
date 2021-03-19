@@ -1,0 +1,47 @@
+@use "styles/mixins";
+
+.searchBar {
+  display: flex;
+  width: 100%;
+
+  label {
+    display: none;
+  }
+
+  .input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px 0 0 4px;
+
+    @media (min-width: 400px) {
+      font-size: 1.2rem;
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: inherit;
+      font-weight: normal;
+    }
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+  }
+
+  & > button {
+    @include mixins.bg("gray-3");
+    display: grid;
+    place-items: center;
+    border: none;
+    position: relative;
+    width: 2.8rem;
+    border-radius: 0 4px 4px 0;
+
+    img {
+      width: 1.2rem;
+    }
+  }
+}
