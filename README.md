@@ -1,4 +1,6 @@
-## Challenge para Mercado Libre
+## Challenge para Mercado Libre 
+
+![Meli Logo](client/src/images/Logo_ML_x2.png) 
 
 #### by Emilia Cabral
 
@@ -56,15 +58,15 @@ npm run build && npm run serve
 
 Estas carácterísticas no las pude agregar por falta de tiempo, me mudé sola en el medio del desafío y perdí casi la mitad de días con eso por no tenerlo en cuenta a la hora de estimar.
 
-- Añadir unit testing tanto en front como en back.
-- Añadir la posibiliad de pasarle un imageClass al componente image.
-- Mejorar el SEO y transformar la app en PWA.
-- Añadir login con Auth0 o integración con MercadoLibre.
-- Utilizar <picture> y <source> para seleccionar el icono mas pequeño en mobile y el más grande en tablet/desktop.
+- [ ] Añadir unit testing tanto en front como en back.
+- [ ] Añadir la posibiliad de pasarle un imageClass al componente image.
+- [ ] Mejorar el SEO y transformar la app en PWA.
+- [ ] Añadir login con Auth0 o integración con MercadoLibre.
+- [ ] Utilizar <picture> y <source> para seleccionar el icono mas pequeño en mobile y el más grande en tablet/desktop.
 
-- Usar typescript en backend.
-- Usar docker en backend.
-- Documentar la api.
-- Añadir rutas y respuestas para diferentes status.
-- Utilizar una plataforma de CI-CD.
+- [ ] Usar typescript en backend.
+- [ ] Usar docker en backend.
+- [ ] Documentar la api.
+- [ ] Añadir rutas y respuestas para diferentes status.
+- [ ] Utilizar una plataforma de CI-CD.
 
