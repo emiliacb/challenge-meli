@@ -53,6 +53,7 @@ npm run build && npm run serve
 - Se utilizó React.useMemo, React.useCallback, React.Lazy y React.Suspense para mejorar la performance.
 - Se logró un alto nivel de performance en Lighthouse
 - Esta largamente comentado (más de lo que sería optimo en una app en producción, pero tuve en cuenta que al ser un desafío, es importante expresar los pensamientos e intenciones alrededor del código)
+- Sitio responsive.
 
 ## ToDo:
 
