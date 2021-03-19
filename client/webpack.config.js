@@ -21,7 +21,6 @@ module.exports = () => {
     },
     devServer: {
       contentBase: path.join(__dirname, "dist"),
-      publicPath: "http://localhost:3000/",
       compress: true,
       port: 4000,
       historyApiFallback: true,

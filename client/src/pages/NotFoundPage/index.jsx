@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { A as Link } from "hookrouter";
 
-import Layout from "../../components/organisms/Layout/index.jsx";
+import Layout from "organisms/Layout";
 
 const NotFoundPage = () => {
   const seo = useMemo(() => {

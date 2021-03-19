@@ -6,8 +6,8 @@ import * as help from "utils/helpers";
 import Image from "atoms/Image";
 
 import styles from "./styles.module.scss";
-import shippingThumbnail from "images/Icon_shipping.png";
-import shippingPicture from "images/Icon_shipping_x2.png";
+import shippingThumbnail from "images/Icon_Shipping.png";
+import shippingPicture from "images/Icon_Shipping_x2.png";
 
 const Card = ({
   item: { free_shipping, id, price, title, picture, thumbnail, address },
