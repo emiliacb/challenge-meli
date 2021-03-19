@@ -54,13 +54,15 @@ npm run build && npm run serve
 - Se logró un alto nivel de performance en Lighthouse
 - Esta largamente comentado (más de lo que sería optimo en una app en producción, pero tuve en cuenta que al ser un desafío, es importante expresar los pensamientos e intenciones alrededor del código)
 - Sitio responsive.
+- 404 page.
 
 ## ToDo:
 
 Estas carácterísticas no las pude agregar por falta de tiempo, me mudé sola en el medio del desafío y perdí casi la mitad de días con eso por no tenerlo en cuenta a la hora de estimar.
 
 - [ ] Añadir unit testing tanto en front como en back.
-- [ ] Añadir la posibiliad de pasarle un imageClass al componente image.
+- [ ] Añadir la posibilidad de pasarle un imageClass al componente image.
+- [ ] Añadir la posibilidad de pasarle un btnClass y activeClass al componente button.
 - [ ] Mejorar el SEO, los OG tags y transformar la app en PWA.
 - [ ] Añadir login con Auth0 o integración con MercadoLibre.
 - [ ] Utilizar <picture> y <source> para seleccionar el icono mas pequeño en mobile y el más grande en tablet/desktop.
