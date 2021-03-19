@@ -70,4 +70,5 @@ Estas carácterísticas no las pude agregar por falta de tiempo, me mudé sola e
 - [ ] Documentar la api.
 - [ ] Añadir rutas y respuestas para diferentes status.
 - [ ] Utilizar una plataforma de CI-CD.
+- [ ] Agregar vistas para las diferentes rutas como en api.mercadolibre.com
 
