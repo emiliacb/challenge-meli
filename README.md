@@ -1,5 +1,4 @@
-# challenge-meli
-## Este es un challenge para Mercado Libre
+## Challenge para Mercado Libre
 
 #### by Emilia Cabral
 
@@ -62,6 +61,7 @@ Estas carácterísticas no las pude agregar por falta de tiempo, me mudé sola e
 - Añadir la posibiliad de pasarle un imageClass al componente image.
 - Mejorar el SEO y transformar la app en PWA.
 - Añadir login con Auth0 o integración con MercadoLibre.
+- Utilizar <picture> y <source> para seleccionar el icono mas pequeño en mobile y el más grande en tablet/desktop.
 
 - Usar typescript en backend.
 - Usar docker en backend.
