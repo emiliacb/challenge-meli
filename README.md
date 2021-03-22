@@ -68,6 +68,7 @@ npm run build && npm run serve
 
 Carácterísticas que no pude agregar por falta de tiempo, me mudé sola en el medio del desafío y perdí casi la mitad de días con eso por no tenerlo en cuenta a la hora de estimar.
 
+- [ ] Manejar el estado con un context.
 - [ ] Añadir unit testing tanto en front como en back.
 - [ ] Añadir la posibilidad de pasarle un imageClass al componente image.
 - [ ] Añadir la posibilidad de pasarle un btnClass y activeClass al componente button.
